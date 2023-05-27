@@ -17,11 +17,14 @@ def imprimeHilo():
     hilosVivos = threading.active_count() 
     msj = f'El {nombreHilo} de {hilosVivos} threads:'
     retardo = random.randint(1,5)
+    # Inicializo la variable para determnar la duracion de la vida del hilo
     duracion = time.time()
     
     logging.info(f"{msj} inicia...")
     time.sleep(retardo)
+    # Se calcula la duracion de la vida del hilo
     duracion = time.time() - duracion
+    # Se agrega a la impriesion la duracion de la vida del hilo y se expresa en milisegundos
     logging.info(f"{msj} TERMINA! - [Tiempo de vida del hilo: {int(duracion * 1000)} ms]")
 
 

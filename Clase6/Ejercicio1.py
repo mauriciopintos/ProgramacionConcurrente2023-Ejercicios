@@ -40,3 +40,4 @@ if __name__ == '__main__':
     # Finalizacion de hilos de la lista de hilos
     for i in range(10):
         hilos[i].join()
+        

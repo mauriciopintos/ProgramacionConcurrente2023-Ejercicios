@@ -7,7 +7,7 @@ import time
 # Configuracion de formato de salida de los eventos del modulo logging 
 logging.basicConfig(format='%(asctime)s.%(msecs)03d [%(threadName)s] - %(message)s', datefmt='%H:%M:%S', level=logging.INFO)
 
-# Definicion de las variables que seutilizaran en las clases Generador y Procesador
+# Definicion de las variables que se utilizaran en las clases Generador y Procesador
 dato = None
 lock = threading.Lock()
 leido = True
